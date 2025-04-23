@@ -5,15 +5,9 @@ from aggregate_root import AggregateRoot
 import pprint
 
 def main():
-    root = AggregateRoot(dict(), dict())
+    root = AggregateRoot()
     commands = [
-        RegisterProduct(id=0, name="iPad"),
-        RegisterProduct(id=1, name="Drinking Bottle"),
-        AddProductToCart(cart_id=0, product_id=0),
-        AddProductToCart(cart_id=0, product_id=0),
-        AddProductToCart(cart_id=0, product_id=1),
-        AddProductToCart(cart_id=1, product_id=1),
-        RemoveProductFromCart(cart_id=0, product_id=0)
+        # TODO Insert a sequence of example commands.
         ]
 
     events = []
